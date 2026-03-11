@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera página web</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <nav class="navegacion">
+        <a href="#inicio">Inicio</a>
+        <a href="#biografia">Biografía</a>
+        <a href="#ejercicios">Ejercicios</a>
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+    </nav>
+
+    <header id="inicio">
+        <h1>¡Hola, mundo!</h1>
+        <p>Esta página fue creada por: <strong>Derick Olmedo xd</strong></p>
+    </header>
+
+    <main>
+        <section id="biografia">
+            <h2>Mi Biografía</h2>
+            <p>Soy estudiante de Sistemas Inteligentes y me apasiona el desarrollo web y la tecnología.</p>
+            
+            <h3>Mis Pasatiempos</h3>
+            <ul>
+                <li>Correr</li>
+                <li>Escuchar música mientras estudio</li>
+                <li>Jugar a la compu</li>
+            </ul>
+        </section>
+
+        <section id="ejercicios">
+            <h3>Países y Capitales</h3>
+            <table>
+                <tr><th>País</th><th>Capital</th></tr>
+                <tr><td>Ecuador</td><td>Quito</td></tr>
+                <tr><td>España</td><td>Madrid</td></tr>
+                <tr><td>Japón</td><td>Tokio</td></tr>
+            </table>
+
+            <h3>Contáctame</h3>
+            <form action="#" method="POST">
+                <input type="text" name="nombre" placeholder="Tu nombre" required>
+                <input type="email" name="correo" placeholder="Correo electrónico" required>
+                <input type="number" name="edad" placeholder="Tu edad">
+                <button type="submit">Enviar Datos</button>
+            </form>
+
+            <div class="caja-especial">
+                <h3>Zona Interactiva</h3>
+                <p>Mueve el slider para probar el control:</p>
+                <input type="range" min="1" max="100" value="50">
+            </div>
+
+            
+            <div class="galeria">
+                <h3 class="Pasatiempos">Galería de Pasatiempos</h3>
+                <img src="Imagenes/running.png" alt="Hobbie 1" onclick="alert('Viendo imagen de Running')">
+                <img src="Imagenes/Musica.png" alt="Hobbie 2" onclick="alert('Viendo imagen de Música')">
+                <img src="Imagenes/Juego.png" alt="Hobbie 3" onclick="alert('Viendo imagen Juegos')">
+            </div>
+        </section>
+    </main>
+
+    <aside>
+        <h4>Dato Curioso</h4>
+        <p>¿Sabías que el primer sitio web de la historia todavía está en línea?</p>
+    </aside>
+
+    <footer>
+        <p>&copy; 2026 - Tarea de HTML y CSS - Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
